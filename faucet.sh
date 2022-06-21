@@ -1,12 +1,12 @@
 #!/bin/bash
 #cuzdan adiniz
-WALLET="ilkermanap_paloma"
+WALLET="dacxys"
 ADDRESS="$(palomad keys show $WALLET -a)"
 JSON=$(jq -n --arg addr "$ADDRESS" '{"denom":"ugrain","address":$addr}')
 #bahsis vermek isteyenler icin benim validator adresi
-TIP_ADDR=palomavaloper147hmy42f96t8k5pattycr897lswfm4njq7jem3
+TIP_ADDR=paloma1vuetxm85ffy69zm6357sf643evcwhd94xeu6wl
 #asagiya kendi validator adresinizi girin
-VALIDATOR=palomavaloper147hmy42f96t8k5pattycr897lswfm4njq7jem3
+VALIDATOR=paloma1vuetxm85ffy69zm6357sf643evcwhd94xeu6wl
 
     
 while :
